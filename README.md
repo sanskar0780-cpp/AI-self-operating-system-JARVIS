@@ -1,10 +1,10 @@
-# 🧠 AI Self Operating System
+#  AI Self Operating System
 
 A personal AI assistant that can **see, think, and act** on your computer — combining automation, voice interaction, web control, and file handling into one system.
 
 ---
 
-## 🚀 What is this?
+##  What is this?
 
 This project is an attempt to build a **Jarvis-like assistant** that doesn’t just answer questions, but actually **does things for you**.
 
@@ -23,7 +23,7 @@ It can:
 
 Here’s a quick look at what the system can do in real usage.
 
-### 📲 Telegram Control (PC ↔ Phone)
+###  Telegram Control (PC ↔ Phone)
 
 Control your system remotely and receive results instantly.
 
@@ -38,7 +38,7 @@ AI: Sending report.pdf...
 
 ---
 
-### 🌐 Web Automation
+###  Web Automation
 
 The assistant can browse and interact with websites on its own.
 
@@ -52,7 +52,7 @@ AI: Entering web mode...
 
 ---
 
-### 🖥️ Autonomous Mode
+###  Autonomous Mode
 
 Give a goal, and the AI figures out the steps.
 
@@ -67,7 +67,7 @@ AI:
 
 ---
 
-### 📂 File Intelligence
+###  File Intelligence
 
 Find and send files using natural language.
 
@@ -81,7 +81,7 @@ AI:
 
 ---
 
-### 🎙️ Voice Interaction
+###  Voice Interaction
 
 Hands-free control using speech.
 
@@ -93,7 +93,7 @@ AI: Screenshot captured
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 <img width="835" height="848" alt="image" src="https://github.com/user-attachments/assets/3235616a-3337-4059-864e-50291fb131d1" />
 
@@ -103,7 +103,7 @@ AI: Screenshot captured
 
 ---
 
-## 🚀 Try It Yourself
+##  Try It Yourself
 
 ```bash
 python main.py
@@ -117,7 +117,7 @@ Then choose:
 
 ---
 
-> ⚡ Tip: The best way to understand it is to actually try commands like
+>  Tip: The best way to understand it is to actually try commands like
 > `send file`, `search youtube`, or `auto ...`
 
 
@@ -174,7 +174,7 @@ python main.py
 
 ---
 
-## 🧪 Example Commands
+##  Example Commands
 
 * `search youtube latest mrbeast video`
 * `send file report.pdf`
@@ -193,7 +193,7 @@ python main.py
 
 ---
 
-## 💡 Why I Built This
+##  Why I Built This
 
 I wanted something more than a chatbot —
 something that can **actually interact with the real world (my computer)**.
@@ -202,7 +202,7 @@ This project is a step toward building a **true personal AI system**, not just a
 
 ---
 
-## 📌 Future Improvements
+##  Future Improvements
 
 * Faster vision models (local + optimized)
 * Better file search (fuzzy matching)
@@ -212,7 +212,7 @@ This project is a step toward building a **true personal AI system**, not just a
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Feel free to fork, experiment, or suggest improvements.
 
