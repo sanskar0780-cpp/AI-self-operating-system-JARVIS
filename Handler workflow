@@ -1,0 +1,22 @@
+Telegram message arrives
+        ↓
+Telethon detects it
+        ↓
+handler(event) is called
+        ↓
+Check chat_id (security)
+        ↓
+Is it voice?
+   ├── YES → download → STT → text
+   └── NO  → use raw text
+        ↓
+Check is_command()
+   ├── YES → handle_command()
+   │         ↓
+   │     returns result
+   │         ↓
+   │     send file / message
+   │
+   └── NO → ask_ai()
+             ↓
+         send reply

@@ -1,0 +1,37 @@
+# ENV / SECRETS
+.env
+.env.*
+
+# PYTHON CACHE
+__pycache__/
+*.pyc
+
+# VIRTUAL ENV
+.venv/
+venv/
+
+# GENERATED FILES
+screen_img.png
+chat_history.json
+browser_data/
+build/
+dist/
+jarvis_session.session
+main.spec
+main.exe
+main.pkg
+
+# AUDIO / TEMP FILES
+*.wav
+*.mp3
+
+# LOGS
+*.log
+
+# OS FILES
+Thumbs.db
+.DS_Store
+
+# IDE FILES
+.vscode/
+.idea/
