@@ -1,4 +1,4 @@
-# 🧠 AI Self Operating System
+<img width="835" height="848" alt="image" src="https://github.com/user-attachments/assets/1768626c-9d4e-4f51-bf74-dd6e7f3b7c12" /># 🧠 AI Self Operating System
 
 A personal AI assistant that can **see, think, and act** on your computer — combining automation, voice interaction, web control, and file handling into one system.
 
@@ -19,65 +19,107 @@ It can:
 
 ---
 
-## ✨ Features
+## 🎥 Demo
 
-### 🎙️ Voice + Text Interaction
+Here’s a quick look at what the system can do in real usage.
 
-* Speak or type commands
-* Uses speech recognition + TTS for natural interaction
+### 📲 Telegram Control (PC ↔ Phone)
 
-### 🖥️ Screen Awareness
+Control your system remotely and receive results instantly.
 
-* Takes screenshots
-* Uses AI + OCR to understand what's on screen
-* Can click buttons or text dynamically
+* Send commands from your phone
+* Get screenshots, files, and responses back
+
+```
+You: send file report.pdf
+AI: Sending report.pdf...
+→ File received on phone ✅
+```
+
+---
 
 ### 🌐 Web Automation
 
-* Built using Playwright
-* Can:
+The assistant can browse and interact with websites on its own.
 
-  * open websites
-  * search YouTube/Google
-  * interact with pages
-
-### 📲 Telegram Control
-
-* Control your system remotely from your phone
-* Send commands and receive:
-
-  * screenshots
-  * files
-  * responses
-
-### 📂 File System Intelligence
-
-* “send file report.pdf” → finds and sends it
-* Searches:
-
-  * Desktop
-  * Downloads
-  * Documents
-  * OneDrive folders
-
-### 🧠 Autonomous Mode
-
-* Give a goal → AI decides step-by-step actions
-* Executes tasks without manual scripting
+```
+You: search youtube latest mrbeast video
+AI: Entering web mode...
+→ Opens YouTube
+→ Searches automatically
+→ Plays video
+```
 
 ---
 
-## 🛠️ Tech Stack
+### 🖥️ Autonomous Mode
 
-* Python
-* Playwright (browser automation)
-* PyAutoGUI (system control)
-* OpenRouter / LLM APIs
-* Whisper (speech-to-text)
-* Tesseract OCR
-* Telethon (Telegram integration)
+Give a goal, and the AI figures out the steps.
+
+```
+You: auto open chrome and search google for weather
+AI:
+- Opens browser
+- Navigates to Google
+- Searches "weather"
+→ Task completed ✅
+```
 
 ---
+
+### 📂 File Intelligence
+
+Find and send files using natural language.
+
+```
+You: send file resume
+AI:
+→ Searches Desktop / Downloads / OneDrive
+→ Finds best match
+→ Sends file
+```
+
+---
+
+### 🎙️ Voice Interaction
+
+Hands-free control using speech.
+
+```
+You (voice): take screenshot
+AI: Screenshot captured
+→ Image sent / saved
+```
+
+---
+
+## 📸 Screenshots
+
+<img width="835" height="848" alt="image" src="https://github.com/user-attachments/assets/3235616a-3337-4059-864e-50291fb131d1" />
+
+* Telegram chat with responses
+* Browser automation in action
+* Screenshot + OCR detection
+
+---
+
+## 🚀 Try It Yourself
+
+```bash
+python main.py
+```
+
+Then choose:
+
+* `1` → mic input
+* `2` → text input
+* `3` → Telegram control
+
+---
+
+> ⚡ Tip: The best way to understand it is to actually try commands like
+> `send file`, `search youtube`, or `auto ...`
+
 
 ## ⚙️ Setup
 
