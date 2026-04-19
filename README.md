@@ -1,4 +1,4 @@
-<img width="835" height="848" alt="image" src="https://github.com/user-attachments/assets/1768626c-9d4e-4f51-bf74-dd6e7f3b7c12" /># 🧠 AI Self Operating System
+# 🧠 AI Self Operating System
 
 A personal AI assistant that can **see, think, and act** on your computer — combining automation, voice interaction, web control, and file handling into one system.
 
