@@ -42,6 +42,18 @@ if os.path.exists("chat_history.json"):
     with open("chat_history.json", "r") as f:
         CHAT_HISTORY = json.load(f)
 
+if os.path.exists("memory.json"):
+    with open("memory.json", "r") as f:
+        memory = json.load(f)
+else:
+    memory = {
+        "user": {
+            "name": "",
+            "interests": []
+        },
+        "habits": []
+    }
+
 micInput_status = False #Keeping the track if mic is on or not
 
 Telegram_api = int(os.getenv("tele_api_id"))
@@ -752,6 +764,9 @@ async def handle_command(msg, event):
         result = await autonomous_mode(msg)
         return result
 
+    elif "my name is" in msg:
+        return {"status": "save_name", "name" : msg}
+
     elif "send file" in msg:
         filename = ask_ai(msg,"filename")
         print("filename:", repr(filename))
@@ -791,6 +806,14 @@ async def handler_common(text, event):
             else:
                 path = screenshot_capture()
                 await event.reply(f"✅ Done: {result['summary']}", file=open(path, "rb"))
+
+        elif result["status"] == "save_name":
+            global memory
+            memory["user"]["name"] = result["name"]
+            await event.reply(f"Name saved as {result["name"]}")
+
+            with open("memory.json", "w") as f:
+                json.dump(memory, f)
 
         elif result["status"] == "send_file":
             if "file" in result:
@@ -844,11 +867,10 @@ async def handler_common(text, event):
 tg_client = TelegramClient("jarvis_session", Telegram_api, Telegram_api_hash)
 @tg_client.on(events.NewMessage)
 async def handler(event):
-
+    await event.reply("Initialized telegram control📶")
     if event.chat_id != Telegram_chat_id:
         return
     global INTERRUPT
-
     if event.message.voice:
         file_path = await event.download_media()
         text = speech_to_text(file_path).lower()
@@ -911,7 +933,7 @@ async def handler(event):
 
 def is_command(msg):
     msg = msg.strip().lower()
-    return any(cmd in msg for cmd in ["auto", "screenshot", "open", "click", "quit", "stop", "email", "send file"])
+    return any(cmd in msg for cmd in ["auto", "screenshot", "open", "click", "quit", "stop", "email", "send file", "my name is"])
 
 if __name__ == "__main__":
     greeting()
